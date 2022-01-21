@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA3ABFBA279AF05400F0801F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EA3ABFB9279AF05400F0801F /* SnapKit */; };
 		EA8FEB0E27259D1E00CDF20E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8FEB0D27259D1E00CDF20E /* AppDelegate.swift */; };
 		EA8FEB1027259D1E00CDF20E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8FEB0F27259D1E00CDF20E /* SceneDelegate.swift */; };
 		EA8FEB1227259D1E00CDF20E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8FEB1127259D1E00CDF20E /* ViewController.swift */; };
-		EA8FEB1527259D1E00CDF20E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA8FEB1327259D1E00CDF20E /* Main.storyboard */; };
 		EA8FEB1727259D2000CDF20E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA8FEB1627259D2000CDF20E /* Assets.xcassets */; };
 		EA8FEB1A27259D2000CDF20E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA8FEB1827259D2000CDF20E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -20,7 +20,6 @@
 		EA8FEB0D27259D1E00CDF20E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA8FEB0F27259D1E00CDF20E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EA8FEB1127259D1E00CDF20E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EA8FEB1427259D1E00CDF20E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA8FEB1627259D2000CDF20E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA8FEB1927259D2000CDF20E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA8FEB1B27259D2000CDF20E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA3ABFBA279AF05400F0801F /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +56,38 @@
 		EA8FEB0C27259D1E00CDF20E /* AdvancedUI */ = {
 			isa = PBXGroup;
 			children = (
-				EA8FEB0D27259D1E00CDF20E /* AppDelegate.swift */,
-				EA8FEB0F27259D1E00CDF20E /* SceneDelegate.swift */,
-				EA8FEB1127259D1E00CDF20E /* ViewController.swift */,
-				EA8FEB1327259D1E00CDF20E /* Main.storyboard */,
-				EA8FEB1627259D2000CDF20E /* Assets.xcassets */,
-				EA8FEB1827259D2000CDF20E /* LaunchScreen.storyboard */,
-				EA8FEB1B27259D2000CDF20E /* Info.plist */,
+				EAF254EB279AE2DA00F18E4A /* MainFiles */,
+				EAF254EC279AE30000F18E4A /* Modules */,
+				EAF254ED279AE32C00F18E4A /* Resources */,
 			);
 			path = AdvancedUI;
+			sourceTree = "<group>";
+		};
+		EAF254EB279AE2DA00F18E4A /* MainFiles */ = {
+			isa = PBXGroup;
+			children = (
+				EA8FEB1827259D2000CDF20E /* LaunchScreen.storyboard */,
+				EA8FEB0D27259D1E00CDF20E /* AppDelegate.swift */,
+				EA8FEB0F27259D1E00CDF20E /* SceneDelegate.swift */,
+				EA8FEB1B27259D2000CDF20E /* Info.plist */,
+			);
+			path = MainFiles;
+			sourceTree = "<group>";
+		};
+		EAF254EC279AE30000F18E4A /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				EA8FEB1127259D1E00CDF20E /* ViewController.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		EAF254ED279AE32C00F18E4A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EA8FEB1627259D2000CDF20E /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +106,9 @@
 			dependencies = (
 			);
 			name = AdvancedUI;
+			packageProductDependencies = (
+				EA3ABFB9279AF05400F0801F /* SnapKit */,
+			);
 			productName = AdvancedUI;
 			productReference = EA8FEB0A27259D1E00CDF20E /* AdvancedUI.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +137,9 @@
 				Base,
 			);
 			mainGroup = EA8FEB0127259D1E00CDF20E;
+			packageReferences = (
+				EA3ABFB8279AF05400F0801F /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = EA8FEB0B27259D1E00CDF20E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +156,6 @@
 			files = (
 				EA8FEB1A27259D2000CDF20E /* LaunchScreen.storyboard in Resources */,
 				EA8FEB1727259D2000CDF20E /* Assets.xcassets in Resources */,
-				EA8FEB1527259D1E00CDF20E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,14 +175,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EA8FEB1327259D1E00CDF20E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EA8FEB1427259D1E00CDF20E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EA8FEB1827259D2000CDF20E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,7 +314,6 @@
 				INFOPLIST_FILE = AdvancedUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -303,7 +322,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.OlegRomanov.AdvancedUI;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oleg-romanov.AdvancedUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -323,7 +342,6 @@
 				INFOPLIST_FILE = AdvancedUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -332,7 +350,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.OlegRomanov.AdvancedUI;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oleg-romanov.AdvancedUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -362,6 +380,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EA3ABFB8279AF05400F0801F /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EA3ABFB9279AF05400F0801F /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EA3ABFB8279AF05400F0801F /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EA8FEB0227259D1E00CDF20E /* Project object */;
 }
