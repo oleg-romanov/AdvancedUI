@@ -311,7 +311,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 78U6FZ3GMX;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AdvancedUI/Info.plist;
+				INFOPLIST_FILE = AdvancedUI/MainFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -339,7 +339,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 78U6FZ3GMX;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AdvancedUI/Info.plist;
+				INFOPLIST_FILE = AdvancedUI/MainFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
